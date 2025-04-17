@@ -3,7 +3,7 @@ import Heading from "./Heading";
 import Section from "./Section";
 import Tagline from "./Tagline";
 import { roadmap } from "../constants";
-import { check2, grid, loading1 } from "../assets";
+import { check2, loading1 } from "../assets";
 import { Gradient } from "./design/Roadmap";
 
 const Roadmap = () => (
@@ -24,13 +24,7 @@ const Roadmap = () => (
             >
               <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
                 <div className="absolute top-0 left-0 max-w-full">
-                  <img
-                    className="w-full"
-                    src={grid}
-                    width={550}
-                    height={550}
-                    alt="Grid"
-                  />
+                  <div className="hidden absolute top-0 left-5 w-0.25 h-full bg-stroke-1 pointer-events-none md:block lg:left-7.5 xl:left-10"></div>
                 </div>
                 <div className="relative z-1">
                   <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">

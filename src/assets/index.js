@@ -1,14 +1,15 @@
-import brainwave from "./brainwave.svg";
+import brainwave from "./brainwave.png";
+
 import check from "./check.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 import play from "./play.svg";
 import gradient from "./gradient.png";
 import smallSphere from "./4-small.png";
-import grid from "./grid.png";
+// import grid from "./grid.png";
 import check2 from "./check-02.svg";
 import loading1 from "./loading-01.svg";
-import yourlogo from "./yourlogo.svg";
+
 import homeSmile from "./home-smile.svg";
 import file02 from "./file-02.svg";
 import searchMd from "./search-md.svg";
@@ -21,8 +22,17 @@ import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
 import background from "./background.jpg";
 
+import slid5 from "./hero/slid5.png";
 import curve from "./hero/curve.png";
-import robot from "./hero/robot.jpg";
+import i1 from "./hero/i1.png";
+import i2 from "./hero/i2.png";
+import i3 from "./hero/i3.png";
+import i4 from "./hero/i4.png";
+import i5 from "./hero/i5.png";
+import i6 from "./hero/i6.png";
+import i7 from "./hero/i7.png";
+import i8 from "./hero/i8.png";
+
 import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
@@ -38,7 +48,7 @@ import slack from "./collaboration/slack.png";
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
-import service3 from "./services/service-3.png";
+import service3 from "./services/service-3.mp4";
 
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
@@ -85,8 +95,16 @@ export {
   play,
   gradient,
   smallSphere,
-  grid,
-  yourlogo,
+  // grid,
+  i1,
+  i2,
+  i3,
+  i4,
+  i5,
+  i6,
+  i7,
+  i8,
+ 
   homeSmile,
   file02,
   searchMd,
@@ -99,7 +117,7 @@ export {
   loading,
   background,
   curve,
-  robot,
+  slid5,
   heroBackground,
   curve1,
   curve2,

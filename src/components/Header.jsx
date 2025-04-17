@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import { brainwave } from "../assets";
@@ -9,8 +9,9 @@ import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
 
 const Header = () => {
-  const pathname = useLocation();
+  const location = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -29,6 +30,11 @@ const Header = () => {
     setOpenNavigation(false);
   };
 
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    console.log('User logged out');
+  };
+
   return (
     <div
       className={`fixed top-0 left-0 w-full z-50  border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
@@ -36,9 +42,9 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
+        <Link className="block w-[12rem] xl:mr-8" to="/">
           <img src={brainwave} width={190} height={40} alt="Brainwave" />
-        </a>
+        </Link>
 
         <nav
           className={`${
@@ -47,35 +53,49 @@ const Header = () => {
         >
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.id}
-                href={item.url}
+                to={item.url}
                 onClick={handleClick}
                 className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
                 } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
-                  item.url === pathname.hash
+                  item.url === location.pathname
                     ? "z-2 lg:text-n-1"
                     : "lg:text-n-1/50"
                 } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
               >
                 {item.title}
-              </a>
+              </Link>
             ))}
           </div>
 
           <HamburgerMenu />
         </nav>
 
-        <a
-          href="#signup"
-          className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
-        >
-          New account
-        </a>
-        <Button className="hidden lg:flex" href="#login">
-          Sign in
-        </Button>
+        {!isLoggedIn ? (
+          <>
+            <Link
+              to="/register"
+              className="button hidden mr-4 text-n-1/50 transition-colors hover:text-n-1 lg:block"
+            >
+              S'inscrire
+            </Link>
+            <Link to="/login" className="hidden lg:block">
+              <Button className="hidden lg:flex">
+                Se connecter
+              </Button>
+            </Link>
+          </>
+        ) : (
+          <Button 
+            className="hidden lg:flex" 
+            onClick={handleLogout}
+            px="px-4"
+          >
+            Déconnexion
+          </Button>
+        )}
 
         <Button
           className="ml-auto lg:hidden"

@@ -33,40 +33,47 @@ import {
   sliders04,
   telegram,
   twitter,
-  yourlogo,
+  i1,
+  i2,
+  i3,
+  i4,
+  i5,
+  i6,
+  i7,
+  i8,
 } from "../assets";
 
 export const navigation = [
   {
     id: "0",
-    title: "Features",
-    url: "#features",
+    title: "Fonctionnalités",
+    url: "/features",
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "#pricing",
+    title: "Tarifs",
+    url: "/pricing",
   },
   {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "Guide",
+    url: "/how-to-use",
   },
   {
     id: "3",
     title: "Roadmap",
-    url: "#roadmap",
+    url: "/roadmap",
   },
   {
     id: "4",
-    title: "New account",
-    url: "#signup",
+    title: "S'inscrire",
+    url: "/register",
     onlyMobile: true,
   },
   {
     id: "5",
-    title: "Sign in",
-    url: "#login",
+    title: "Se connecter",
+    url: "/login",
     onlyMobile: true,
   },
 ];
@@ -75,12 +82,12 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [i1, i2, i3, i4, i5,i6,i7,i8];
 
 export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+  "Catalogue international",
+  "Qualité d'image supérieure",
+  "Intégration multi-appareils",
 ];
 
 export const brainwaveServicesIcons = [
@@ -94,55 +101,58 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
+    title: "Contrôle vocal des chaînes",
+    text: "Changez de chaîne, ajustez le volume ou recherchez un film en utilisant simplement votre voix. Compatible avec Alexa, Google Assistant et Siri.",
+    date: "May 2025 ",
     status: "done",
     imageUrl: roadmap1,
     colorful: true,
   },
   {
     id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
-    status: "progress",
+    title: "Statistiques de visionnage",
+    text: "Découvrez combien d'heures vous avez passées sur vos séries préférées, vos genres les plus regardés, et recevez des recommandations basées sur vos habitudes.",
+    date: "May 2025",
+    status: " EN DÉVELOPPEMENT",
     imageUrl: roadmap2,
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
+    title: "Profils personnalisés",
+    text: "Créez des profils pour chaque membre de la famille, avec des recommandations, une interface personnalisée et un contrôle parental intégré.",
+    date: "May 2025",
     status: "done",
     imageUrl: roadmap3,
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
-    status: "progress",
+    title: "Intégration multi-plateformes",
+    text: "Regardez vos chaînes préférées sur mobile, tablette, Smart TV, box Android ou navigateur web. Synchronisation instantanée sur tous vos appareils.",
+    date: "May 2025",
+    status: "EN PRÉPARATION",
     imageUrl: roadmap4,
   },
 ];
 
-export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+export const collabText =["Avec une diffusion fluide et une sécurité de premier ordre, c'est la solution parfaite pour les amateurs de divertissement exigeants."];
+export const collabText1 =["Accédez à des milliers de chaînes et contenus à la demande avec une qualité d'image exceptionnelle."];
+export const collabText2 =["Naviguez en toute confiance grâce à notre système de protection avancé."];
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "Intégration Transparente",
     text: collabText,
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Streaming Intelligent",
+    text: collabText1,
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: " Sécurité Optimale",
+    text: collabText2,
   },
 ];
 
@@ -151,57 +161,58 @@ export const collabApps = [
     id: "0",
     title: "Figma",
     icon: figma,
-    width: 26,
-    height: 36,
+    width: 100,
+    height: 100,
   },
   {
     id: "1",
     title: "Notion",
     icon: notion,
-    width: 34,
-    height: 36,
+    width: 100,
+    height: 100,
   },
   {
     id: "2",
     title: "Discord",
     icon: discord,
-    width: 36,
-    height: 28,
+    width: 100,
+    height: 100,
   },
   {
     id: "3",
     title: "Slack",
     icon: slack,
-    width: 34,
-    height: 35,
+    width: 100,
+    height:100,
   },
   {
     id: "4",
     title: "Photoshop",
     icon: photoshop,
-    width: 34,
-    height: 34,
+    width: 100,
+    height: 100,
   },
   {
     id: "5",
     title: "Protopie",
     icon: protopie,
-    width: 34,
-    height: 34,
+    width: 100,
+    height: 100,
   },
   {
     id: "6",
     title: "Framer",
     icon: framer,
-    width: 26,
-    height: 34,
+    width: 100,
+    height: 100,
   },
   {
     id: "7",
     title: "Raindrop",
     icon: raindrop,
-    width: 38,
-    height: 32,
+    width: 100,
+    ontSize: 12,
+    height: 100,
   },
 ];
 
@@ -244,16 +255,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Qualité HD/4K",
+    text: "Profitez d'une qualité d'image exceptionnelle avec nos chaînes en HD et 4K. Une expérience visuelle incomparable. ",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Contenu Varié",
+    text: "Plus de 24 000 chaînes et 90 000 films et séries. Sports, actualités, divertissement, tout y est! ",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -261,16 +272,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Stabilité Garantie",
+    text: "Serveurs ultra-performants garantissant une diffusion fluide sans coupures ni tamponnement. ",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Multi-Appareils",
+    text: "Compatible avec tous vos appareils : Smart TV, Android, iOS, MAG, FireStick, et plus encore. ",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -278,16 +289,16 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Support 24/7",
+    text: "Une équipe de support technique disponible 24/7 pour vous assister en cas de besoin. ",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Installation Rapide",
+    text: "Activation instantanée et installation simple. Commencez à regarder en quelques minutes! ",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,

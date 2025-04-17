@@ -133,10 +133,30 @@ Open [http://localhost:5173](http://localhost:5173) in your browser to view the 
 }
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </details>
 
 <details>
 <summary><code>tailwind.config.js</code></summary>
+
+
+
+
+
+
 
 ```javascript
 /** @type {import('tailwindcss').Config} */

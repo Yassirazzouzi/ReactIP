@@ -10,7 +10,7 @@ const Collaboration = () => {
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <h2 className="h2 mb-4 md:mb-8">
-            AI Chat App for seamless collaboration
+          IPTV Premium pour un divertissement sans limites
           </h2>
 
           <ul className="max-w-[22rem] mb-10 md:mb-14">
@@ -63,9 +63,7 @@ const Collaboration = () => {
                     }`}
                   >
                     <img
-                      className="m-auto"
-                      width={app.width}
-                      height={app.height}
+                      className="m-auto w-full h-full object-cover rounded-xl"
                       alt={app.title}
                       src={app.icon}
                     />

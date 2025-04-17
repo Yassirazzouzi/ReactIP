@@ -32,16 +32,17 @@ const Services = () => {
               />
             </div>
 
-            <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Smartest AI</h4>
-              <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
+            {/* Texte superposé à l'image */}
+            <div className="absolute inset-0 flex flex-col justify-center items-start p-8 bg-gradient-to-b from-transparent to-black/60 md:w-3/5 xl:w-auto">
+              <h4 className="h4 mb-4 text-white">Technologie IPTV Intelligente</h4>
+              <p className="body-2 mb-[3rem] text-white">
+              Débloquez le potentiel de vos divertissements préférés.   
               </p>
-              <ul className="body-2">
+              <ul className="body-2 text-white">
                 {brainwaveServices.map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-start py-4 border-t border-n-6"
+                    className="flex items-start py-4 border-t border-white/50"
                   >
                     <img width={24} height={24} src={check} />
                     <p className="ml-4">{item}</p>
@@ -49,8 +50,6 @@ const Services = () => {
                 ))}
               </ul>
             </div>
-
-            <Generating className="absolute left-4 right-4 bottom-4 border-n-1/10 border lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2" />
           </div>
 
           <div className="relative z-1 grid gap-5 lg:grid-cols-2">
@@ -65,23 +64,16 @@ const Services = () => {
                 />
               </div>
 
-              <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-                <h4 className="h4 mb-4">Photo editing</h4>
-                <p className="body-2 mb-[3rem] text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s
-                  photo editing feature. Try it now!
-                </p>
-              </div>
+               
 
-              <PhotoChatMessage />
+                <PhotoChatMessage />
             </div>
 
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">Video generation</h4>
+                <h4 className="h4 mb-4">Bibliothèque de contenu</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                  The world’s most powerful AI photo and video art generation
-                  engine. What will you create?
+                La collection la plus complète de chaînes TV et contenu à la demande. Que souhaitez-vous regarder aujourd'hui?
                 </p>
 
                 <ul className="flex items-center justify-between">
@@ -109,9 +101,13 @@ const Services = () => {
               </div>
 
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
-                <img
+                <video
+                  autoPlay
+                  muted
+                  playsInline
+                  loop
                   src={service3}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-xl border border-n-1/10"
                   width={520}
                   height={400}
                   alt="Scary robot"

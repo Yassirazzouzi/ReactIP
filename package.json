@@ -36,5 +36,9 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "vercel-build": "npm ci && npm run build"
-  }
+  },
+  
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
